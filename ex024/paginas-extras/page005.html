@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>into the iframe</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="bomb()" >click</a>
+    <div id="n"></div>
+    <script>
+        function bomb() {
+            s = window.document.getElementById("n")
+            s.innerHTML += '<p>dont piss me off</p>'
+        }
+    </script>
+</body>
+</html>
