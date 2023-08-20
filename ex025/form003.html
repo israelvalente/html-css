@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="get.php" autocomplete="on">
+        <p>
+            <label for="iname">Name</label>
+            <input type="text" name="name" id="iname" required maxlength="30" placeholder="complete name" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 - 10" step="0.1" required>
+        </p>
+        <p>
+            <label for="imonth">Month</label>
+            <input type="month" name="month" id="imonth">
+        </p>
+        <p>
+            <label for="iday">Day</label>
+            <input type="date" name="day" id="iday">
+        </p>
+        <p>
+            <label for="ihour">Hour</label>
+            <input type="time" name="hour" id="ihour">
+        </p>
+        <p>
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+</body>
+</html>
