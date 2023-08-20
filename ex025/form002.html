@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="get.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iuser">User: </label>
+            <input type="text" name="use" id="iuser" required minlength="5" maxlength="15" placeholder="user name" autocomplete="username">
+        </p>
+        <p>
+            <label for="ipass">Password: </label>
+            <input type="password" name="pass" id="ipass" required minlength="3" maxlength="20" size="5" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="send">
+            <input type="reset" value="reset ">
+        </p>
+    </form>
+    
+</body>
+</html>
