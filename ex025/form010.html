@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <style>
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1 {
+            text-align: center;
+            background-color: aquamarine;
+        }
+        form {
+            background-color: goldenrod;
+            text-align: center;
+            padding: 30px;
+        }
+        body {
+            padding: 30px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formulário</h1>
+    <h1>Form to age</h1>
     <form action="" method="get" autocomplete="on">
-        
+        <p>
+            <label for="iyear">Year of you born </label>
+            <input type="number" name="" id="iyear" min="1920" max="2023" oninput="calc()">
+        </p>
+        <p>
+            <label for="iage">Your age this year is </label>
+            <output id="iage">0</output>
+        </p>
         <p>
             <input type="submit" value="submit">
             <input type="reset" value="reset">
         </p>
     </form>
+    <script>
+        function calc() {
+            let today = new Date().getFullYear()
+            iage.innerHTML = Number(today) - Number(iyear.value)
+        }
+    </script>
 </body>
 </html>

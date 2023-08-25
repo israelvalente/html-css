@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+    <style>
+        body {
+            background-color: gray;
+            padding: 30px;
+            text-align: center;
+        }
+        header {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: darkgray;
+            padding: 30px;
+        }
+        form{
+            background-color: aqua;
+            text-align: center;
+            padding: 30px;
+        }
+        footer {
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Formulário</h1>
+        <h1>The form</h1>
     </header>
     <form action="get.php" method="get" autocomplete="on">
         <p>
-            <label for="inum">Número</label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
-            <output id="ival">5</output>
+            <label for="inum">Number</label>
+            <input type="range" name="" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival"></output>
         </p>
         <p>
             <input type="submit" value="send">
             <input type="reset" value="reset">
         </p>
-
     </form>
+    <footer>
+        <a href="https://github.com/israelvalente" target="_blank">israelvalente</a>
+    </footer>
 </body>
 </html>
