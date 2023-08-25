@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: darkgoldenrod;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 30px;
+            text-align: center;
+        }
+
+        form {
+            background-color: darkgray;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+    <form action="get.php" method="post" autocomplete="on">
+        <p>
+            <label for="in1">Number 1</label>
+            <input type="number" name="" id="in1" oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Number 2</label>
+            <input type="number" name="" id="in2" oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isum">sum</label>
+            <output id="isum">0</output>
+        </p>
+        <p>
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+        </p>
+
+    </form>
+    <footer>
+
+    </footer>
+</body>
+</html>

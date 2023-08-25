@@ -11,12 +11,12 @@ body {
 }
 
 form {
-    background-color: greenyellow;
+    background-color: rgb(50, 47, 255);
     padding: 30px;
     width: 300px;
     height: 300px;
     border: 3px black;
-    text-align: center center;
+    text-align: center;
 }
 
 form > button {
